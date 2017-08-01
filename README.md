@@ -7,9 +7,12 @@ add align and crop:
 
 example:
     A = FaceAlignmentor(caffe_model_path)
+    
     #return the aligned and cropped image
     wrapimage = A.run(image)
+    
     #just return box and landmarks
     boxes, points = A.detectface(image)
+    
     #align and crop
     warpimage = A.alignment(image,points,ref_points='your reference points',ref_shape = 'your reference image shape')
