@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #FaceAlignmentor().run(image)   return an image in BGR,112*96
-import caffe
-import cv2
+import caffe,cv2
+import numpy as np
 from skimage import transform as tf
 
 class FaceAlignmentor:
