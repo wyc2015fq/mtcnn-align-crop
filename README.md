@@ -6,6 +6,7 @@ add align and crop:
     using similarity transform in skimage
 
 example:
+
     A = FaceAlignmentor(caffe_model_path)
     
     #return the aligned and cropped image
