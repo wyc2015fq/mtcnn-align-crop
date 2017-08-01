@@ -267,7 +267,6 @@ class FaceAlignmentor:
             PNet.blobs['data'].reshape(1, 3, ws, hs)
             PNet.blobs['data'].data[...] = im_data
             out = PNet.forward()
-            print out
             boxes = self.generateBoundingBox(out['prob1'][0,1,:,:], out['conv4-2'][0], scale, threshold[0])
             if boxes.shape[0] != 0:
                 #print boxes[4:9]
