@@ -1,6 +1,7 @@
 # mtcnn-align-crop
 It is a python code of mtcnn with alignment and crop added
-source code and models are from https://github.com/DuinoDu/mtcnn
+
+source code and models are from: https://github.com/DuinoDu/mtcnn
 
 add align and crop:
     using similarity transform in skimage
